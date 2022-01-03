@@ -1,5 +1,4 @@
 import{ useState, useEffect } from "react";
-import { ethers } from "ethers";
 import useGreet from './useGreet';
 
 export default function useWallet() {
@@ -47,6 +46,7 @@ export default function useWallet() {
       });
       console.log("connected", accounts[0]);
       setCurrentAccount(accounts[0]);
+      await window.location.reload();
     } catch (err) {
       console.log(err);
     }
