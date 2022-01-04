@@ -4,8 +4,8 @@ import useEthereum from "./useEthereum";
 export default function useGreet() {
   const { getEthereum } = useEthereum();
   const [greetingInfo, setGreetingInfo] = useState({
-    name: "",
-    message: "",
+    name: "WAGMI",
+    message: "We're all gonna make it",
   });
   const [allGreetings, setAllGreetings] = useState([]);
 
